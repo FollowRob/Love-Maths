@@ -17,8 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function runGame(){
 
+function runGame(){
+    // randomly generate two numbers between 1 and 25
+    letnum1 = Math.floor(Math.random() * 25 +1);
+    letnum2 = Math.floor(Math.random() * 25 +1);
 }
 
 function checkAnswer(){
