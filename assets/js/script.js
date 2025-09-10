@@ -119,8 +119,9 @@ function displayMultiplyQuestion(operand1, operand2){
 }
 
 function displayDivisionQuestion(operand1, operand2){
-    // the difference here is to ensure the question never has a negative answer
-    document.getElementById('operand1').textContent = operand1 > operand2 ? operand1 : operand2;
-    document.getElementById('operand2').textContent = operand2 > operand1 ? operand1 : operand2;
+    //  ensure the answer divisible to a whole number
+    operand1 = operand1 * operand2;
+    document.getElementById('operand1').textContent = operand1;
+    document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "/"; 
 }
